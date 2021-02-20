@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="4dp"
+    tools:context=".views.fragments.EmployeeDetailsFragment">
+    <ImageView
+        android:id="@+id/imageview_profile"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+    <TextView
+        android:id="@+id/textView_name"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/full_names" />
+
+    <Button
+        android:id="@+id/textView_email"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_email"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Salary: $100,000" />
+
+    <Button
+        android:id="@+id/textView_address"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_address"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Age: 33" />
+
+    <Button
+        android:id="@+id/textView_phone"
+        android:background="@android:color/transparent"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Some URL will go here" />
+
+    <Button
+        android:id="@+id/textView_website"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_web"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Some URL will go here" />
+
+    <Button
+        android:id="@+id/textView_companydetails"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        app:icon="@drawable/ic_company"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Some URL will go here" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/listfragment"
+    android:id="@+id/nav_host">
+    <fragment android:id="@+id/listfragment"
+        android:name="com.wrabbit.employeedirecctory.views.fragments.EmployeeListFragment"
+        android:label="Employee List"
+        tools:layout="@layout/fragment_employee_list">
+        <action android:id="@+id/action_listfragment_to_detailsfragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:destination="@id/detailsfragment"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment android:id="@+id/detailsfragment"
+        android:label="Employee details"
+        tools:layout="@layout/fragment_employee_details"
+        android:name="com.wrabbit.employeedirecctory.views.fragments.EmployeeDetailsFragment" />
+
+</navigation>
